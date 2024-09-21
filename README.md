@@ -33,6 +33,27 @@ git clone https://github.com/inAudible-NG/tables.git
 FFmpeg 2.8.1+ is required. Use Wine with the included (in `run` folder) Windows
 binaries in case these Linux executables do not run on your distribution.
 
+#### Use crack_usr_key.sh
+
+I have created a shell script to use on linux. Simply change directories to the location of the downloaded audiobooks. With the repo cloned to ~/repos/source/tables, just call
+
+```bash
+$ ~/repos/source/tables/crack_usr_key.sh <AudiobookName>.aax
+```
+
+You should see the following:
+```
+Source Directory: /home/jfirth/repos/source/tables
+Getting checksum for file: <AudioBookName>>.aax
+Checksum =  1234567890abcdef1234567890abcdef12345678
+Attempting to crack file <AudioBookName>.aax using rcrack
+Success!
+User activation key: XXXXXXXX
+```
+
+
+### Manual Steps
+
 ##### Extract SHA1 checksum from the .aax file
 
 ```
